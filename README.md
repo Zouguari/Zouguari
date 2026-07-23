@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:48C9B0&height=280&section=header&text=Yassine%20Zouguari&fontSize=72&fontColor=ffffff&fontAlignY=42&desc=Software%20Engineer%20%7C%20AI%20%26%20Full-Stack%20Developer&descAlignY=62&descSize=24" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:6C63FF,100:48C9B0&amp;height=280&amp;section=header&amp;text=Yassine%20Zouguari&amp;fontSize=72&amp;fontColor=ffffff&amp;fontAlignY=42&amp;desc=Software%20Engineer%20%7C%20AI%20%26%20Full-Stack%20Developer&amp;descAlignY=62&amp;descSize=24" width="100%"/>
 
 </div>
 
@@ -207,9 +207,9 @@ Architected a fully modular academic ERP system covering student management, gra
 
 <div align="center">
 
-<img height="220" src="https://github-readme-stats.vercel.app/api?username=Zouguari&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&card_width=480" />
+<img height="220" src="https://github-readme-stats.vercel.app/api?username=Zouguari&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;count_private=true&amp;include_all_commits=true&amp;card_width=480" />
 &nbsp;&nbsp;
-<img height="220" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zouguari&layout=compact&theme=tokyonight&hide_border=true&card_width=320" />
+<img height="220" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zouguari&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=320" />
 
 </div>
 
@@ -217,7 +217,7 @@ Architected a fully modular academic ERP system covering student management, gra
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Zouguari&theme=tokyo-night&hide_border=true&area=true" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Zouguari&amp;theme=tokyo-night&amp;hide_border=true&amp;area=true" width="100%"/>
 
 </div>
 
@@ -267,6 +267,6 @@ Architected a fully modular academic ERP system covering student management, gra
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:48C9B0,100:6C63FF&height=140&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:48C9B0,100:6C63FF&amp;height=140&amp;section=footer" width="100%"/>
 
 </div>
