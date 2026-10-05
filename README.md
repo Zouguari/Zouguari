@@ -1,272 +1,247 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:6C63FF,100:48C9B0&amp;height=280&amp;section=header&amp;text=Yassine%20Zouguari&amp;fontSize=72&amp;fontColor=ffffff&amp;fontAlignY=42&amp;desc=Software%20Engineer%20%7C%20AI%20%26%20Full-Stack%20Developer&amp;descAlignY=62&amp;descSize=24" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0070F2,50:1B2A4A,100:714B67&height=260&section=header&text=Yassine%20Zouguari&fontSize=68&fontColor=ffffff&fontAlignY=40&desc=Technical%20ERP%20Engineer%20%E2%80%A2%20SAP%20%C2%B7%20Odoo%20%C2%B7%20AI%20%C2%B7%20Full-Stack&descAlignY=62&descSize=22" width="100%"/>
+
+<a href="https://github.com/Zouguari">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=0070F2&center=true&vCenter=true&width=720&lines=Building+SAP+BTP+%2F+CAP+extensions+on+S%2F4HANA+Cloud;Writing+ABAP+Cloud+%26+Classic+ABAP+interfaces+(IDoc+%C2%B7+BAPI);Customizing+and+automating+Odoo+17+modules;Plugging+AI+into+ERP+data+%E2%80%94+safely;Full-stack+Python+%26+Java+%C2%B7+DevOps+%C2%B7+Cloud" alt="Typing SVG"/>
+</a>
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-yassine--zouguari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yassine-zouguari)
+[![Email](https://img.shields.io/badge/Email-Contact_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Yassine.zouguari.123@gmail.com)
+[![Credly](https://img.shields.io/badge/Credly-Verified_badges-FF6B00?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/earner/earned/badge/31cdc2c5-0920-401b-b627-504b15beedc8)
 
 </div>
 
-<br/>
+```text
+┃ SAP Easy Access ─ User: ZOUGUARI_Y ─ Client: 400
+┃
+┃ ▶ Command field : /nZYASSINE
+┃ ✔ Transaction ZYASSINE started — navigate below, the SAP way.
+```
 
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2)](https://linkedin.com/in/yassine-zouguari)&nbsp;&nbsp;
-[![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335)](mailto:Yassine.zouguari.123@gmail.com)&nbsp;&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-Zouguari-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=181717)](https://github.com/Zouguari)
-
-</div>
-
-<br/>
-
----
+> 🧭 **Navigation tip:** every section of this profile is a real SAP transaction code. If you know them, you already know where to look.
 
 <br/>
 
-## 🧠 Who Am I?
+## 👤 `/nSU01` — User Profile
 
-<br/>
+```abap
+CLASS zcl_yassine_zouguari DEFINITION PUBLIC FINAL CREATE PUBLIC.
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+ENDCLASS.
 
-```python
-class YassineZouguari:
-    def __init__(self):
-        self.role        = "Software Engineering Student & AI Developer"
-        self.focus       = ["Full-Stack Web", "AI & Computer Vision", "ERP Systems", "System Design"]
-        self.languages   = ["Arabic (native)", "French (B2)", "English (B2)"]
-        self.currently   = "Building real-time AI systems & scalable web apps"
-        self.open_to     = ["Internships", "Collaborations", "Open Source"]
-
-    def life_motto(self):
-        return "Ship it. Learn from it. Build something better."
+CLASS zcl_yassine_zouguari IMPLEMENTATION.
+  METHOD if_oo_adt_classrun~main.
+    out->write( |Role    : Engineering student — IS Management & Governance (5th year)| ).
+    out->write( |School  : ENSIASD Taroudant · Ibn Zohr University| ).
+    out->write( |Mission : Technical ERP consultant — SAP & Odoo, powered by AI| ).
+    out->write( |Builds  : BTP/CAP extensions · ABAP interfaces · Odoo modules| ).
+    out->write( |Also    : Full-stack Python & Java · DevOps · Cloud| ).
+    out->write( |Speaks  : Arabic (native) · French (B2) · English (B2)| ).
+    out->write( |Looking : End-of-studies internship (PFE) — 2027| ).
+  ENDMETHOD.
+ENDCLASS.
 ```
 
 <br/>
 
----
+## 🗺️ The Bridge — where ERP meets AI
+
+I don't treat SAP, Odoo, AI and web development as separate worlds. My work sits **in between** them:
+
+```mermaid
+flowchart LR
+    subgraph SAP["🔷 SAP"]
+        S4["S/4HANA Cloud"]
+        ABAP["ABAP Cloud · Classic ABAP"]
+        CAP["SAP BTP · CAP Node.js"]
+        ABAP -->|"IDoc · BAPI"| S4
+        S4 <-->|"OData"| CAP
+    end
+
+    subgraph AI["🧠 AI Layer"]
+        LLM["LLM agents · Anomaly detection · KPI insights"]
+    end
+
+    subgraph ODOO["🟣 Odoo 17"]
+        O["Custom modules · HR automation · ORM"]
+    end
+
+    subgraph APPS["⚡ Full-Stack"]
+        WEB["Next.js · FastAPI · Django"]
+        MOB["React Native · Expo"]
+    end
+
+    CAP --> LLM
+    O -->|"XML-RPC"| LLM
+    LLM --> WEB
+    O --> MOB
+
+    classDef sap fill:#0070F2,stroke:#0050B0,color:#fff
+    classDef ai fill:#1B2A4A,stroke:#48C9B0,color:#fff
+    classDef odoo fill:#714B67,stroke:#5A3A52,color:#fff
+    classDef app fill:#48C9B0,stroke:#2E9C86,color:#0B1B2B
+    class S4,ABAP,CAP sap
+    class LLM ai
+    class O odoo
+    class WEB,MOB app
+```
+
+**Principle I build by:** AI suggests, the ERP decides. Real business data is never altered cosmetically, and every AI-recommended action stays pending until a human confirms it in the ERP.
 
 <br/>
 
-## ⚡ Tech Stack
+## 🔐 `/nPFCG` — Roles & Authorizations *(Certifications)*
+
+<div align="center">
+
+| | Certification | Code | Verify |
+|:-:|:--|:-:|:-:|
+| <img src="https://img.shields.io/badge/-SAP-0FAAFF?style=flat-square&logo=sap&logoColor=white"/> | **SAP Certified — Back-End Developer — ABAP Cloud** | `C_ABAPD_2601` | [![Credly](https://img.shields.io/badge/Credly-View-FF6B00?style=flat-square&logo=credly&logoColor=white)](https://www.credly.com/earner/earned/badge/31cdc2c5-0920-401b-b627-504b15beedc8) |
+| <img src="https://img.shields.io/badge/-SAP-0FAAFF?style=flat-square&logo=sap&logoColor=white"/> | **SAP Certified — Backend Developer — SAP Cloud Application Programming Model** | `C_CPE` | [![Credly](https://img.shields.io/badge/Credly-View-FF6B00?style=flat-square&logo=credly&logoColor=white)](https://www.credly.com/earner/earned/badge/4bab003b-e9b4-4c64-8c0c-d9b78fbc531c) |
+| <img src="https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/> | **Oracle Certified Professional: Java SE 17 Developer** | `1Z0-829` | [![Oracle](https://img.shields.io/badge/Oracle-View-F80000?style=flat-square&logo=oracle&logoColor=white)](https://catalog-education.oracle.com/ords/certview/sharebadge?id=B83791B2AC31E947924EA51F0BB8AF1C8385662DD7CC0E2768E5AE9ABD579BE9) |
+| <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white"/> | **Programming with Python 3.X** — Simplilearn | `2026` | — |
+
+</div>
+
+<!-- TODO: add the 2 other Java certifications here (same row format) -->
 
 <br/>
 
-### 🖥️ Languages
+## 📦 `/nSE80` — Object Navigator *(Featured Projects)*
+
+### 🔷 SAP Track
+
+| Project | What it does | Stack |
+|:--|:--|:--|
+| **[Vendor Spend Intelligence](https://github.com/Zouguari/vendor-spend-intelligence)** | Side-by-side SAP BTP extension connected to **S/4HANA Cloud** that uses AI to detect blocked and duplicate vendors. | `SAP BTP` `CAP Node.js` `CDS` `OData` `AI` |
+| **[SAP ABAP IDoc — Sales Orders](https://github.com/Zouguari/sap-abap-idoc-sales-orders)** | End-to-end inbound interface in **Classic ABAP**: custom IDoc type & segments, inbound function module, BAPI order creation, log table, and an ALV monitor with one-click reprocessing of failed IDocs. Exported with abapGit. | `ABAP` `IDoc / ALE` `BAPI` `ALV` `abapGit` |
+| **[CAP Purchase Request](https://github.com/Zouguari/cap-purchase-request)** | Purchase request application built with the SAP Cloud Application Programming Model, with an AI analysis layer. | `CAP Node.js` `CDS` `AI` |
+| **[SAP Purchase Request](https://github.com/Zouguari/Sap_purchase_request)** | Purchase request scenario on SAP. | `SAP` |
+
+### 🟣 Odoo Track
+
+| Project | What it does | Stack |
+|:--|:--|:--|
+| **[SmartERP AI](https://github.com/Zouguari/smarterp-ai)** | SaaS decision-analytics platform and AI agent for **Odoo 17**: KPI analysis, anomaly detection and recommendations for SME managers, with audit trails and human-confirmed ERP actions. | `Odoo 17` `XML-RPC` `FastAPI` `Next.js` `LLM` |
+| **[Smart HR Mobile](https://github.com/Zouguari/smart-hr-mobile)** | Mobile HR app connected to an Odoo backend. | `React Native` `Expo` `TypeScript` `Odoo` |
+| **[HR Automation — Odoo](https://github.com/Zouguari/Rh_automatise-odoo)** | Automated HR modules in Odoo, configured to user needs. | `Odoo` `Python` |
+| **[ENSIASD ERP](https://github.com/Zouguari/ENSIASD-ERP---Syst-me-de-Gestion-Int-gr-)** | Full academic ERP for ENSIASD: students, grades, attendance, internships and dashboards. | `Odoo 17` `Python` `PostgreSQL` `Docker` |
+| **[WEBEDU — Student Portal](https://github.com/Zouguari/WEBEDUapplicationERP)** | Web application exposing student grades and information through the Odoo ERP API. | `Django` `REST API` `Odoo` |
 
 <br/>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![PL/SQL](https://img.shields.io/badge/PL%2FSQL-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+## 📋 `/nSM37` — Job Overview *(Experience)*
+
+| Job name | Status | Highlights |
+|:--|:-:|:--|
+| `Z_URIKACLOUD_AI_ERP` · **AI & ERP Intern**, UrikaCloud · May–Aug 2026 | ✅ Finished | Built SmartERP AI, Smart HR Mobile and an AI recruitment module on top of Odoo 17. |
+| `Z_LAFARGEHOLCIM_CV` · **AI Engineer Intern**, LafargeHolcim | ✅ Finished | Real-time face-recognition attendance system with a web dashboard. |
+| `Z_CAR_RENTAL_WEB` · **Full-Stack Intern** | ✅ Finished | Car rental platform: reservations, vehicle catalogue, users and authentication. |
+| `Z_MAROCARTISAN_LEAD` · **Global Project Lead** | ✅ Finished | Coordinated **10 teams (55 students)** on a Moroccan artisan marketplace; owned the Oracle DB architecture, code reviews and CI workflows. |
 
 <br/>
 
-### 🌐 Web & Frameworks
+## ⚙️ `/nSPRO` — Implementation Guide *(Tech Stack)*
 
-<br/>
+**🔷 SAP**
 
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![REST API](https://img.shields.io/badge/REST%20API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![ABAP Cloud](https://img.shields.io/badge/ABAP_Cloud-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
+![Classic ABAP](https://img.shields.io/badge/Classic_ABAP-0070F2?style=for-the-badge&logo=sap&logoColor=white)
+![RAP](https://img.shields.io/badge/RAP-0070F2?style=for-the-badge&logo=sap&logoColor=white)
+![CDS](https://img.shields.io/badge/CDS-0070F2?style=for-the-badge&logo=sap&logoColor=white)
+![SAP CAP](https://img.shields.io/badge/SAP_CAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
+![SAP BTP](https://img.shields.io/badge/SAP_BTP-0070F2?style=for-the-badge&logo=sap&logoColor=white)
+![S/4HANA](https://img.shields.io/badge/S%2F4HANA_Cloud-1B2A4A?style=for-the-badge&logo=sap&logoColor=white)
+![IDoc](https://img.shields.io/badge/IDoc_%C2%B7_BAPI_%C2%B7_ALV-1B2A4A?style=for-the-badge&logo=sap&logoColor=white)
+![OData](https://img.shields.io/badge/OData-0FAAFF?style=for-the-badge&logo=odata&logoColor=white)
 
-<br/>
+**🟣 Odoo**
 
-### 🤖 AI & Data
+![Odoo 17](https://img.shields.io/badge/Odoo_17-714B67?style=for-the-badge&logo=odoo&logoColor=white)
+![Odoo ORM](https://img.shields.io/badge/ORM_%C2%B7_Custom_Modules-714B67?style=for-the-badge&logo=odoo&logoColor=white)
+![XML-RPC](https://img.shields.io/badge/XML--RPC_API-5A3A52?style=for-the-badge&logo=odoo&logoColor=white)
+![HR](https://img.shields.io/badge/HR_Automation-5A3A52?style=for-the-badge&logo=odoo&logoColor=white)
 
-<br/>
+**🧠 AI & Data**
 
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+<a href="#"><img src="https://skillicons.dev/icons?i=tensorflow,sklearn,opencv&theme=dark" /></a>
+![LLM](https://img.shields.io/badge/LLM_Agents-1B2A4A?style=for-the-badge&logo=openai&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
+
+**⚡ Full-Stack — Languages & Frameworks**
+
+<a href="#"><img src="https://skillicons.dev/icons?i=python,java,js,ts,php,bash&theme=dark" /></a>
+<br/>
+<a href="#"><img src="https://skillicons.dev/icons?i=django,fastapi,flask,nodejs,nextjs,react,laravel,html,css&theme=dark" /></a>
+<br/>
+![React Native](https://img.shields.io/badge/React_Native_%C2%B7_Expo-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![PL/SQL](https://img.shields.io/badge/PL%2FSQL-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+**🗄️ Databases**
+
+<a href="#"><img src="https://skillicons.dev/icons?i=postgres,mysql&theme=dark" /></a>
+![Oracle](https://img.shields.io/badge/Oracle_DB-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
 <br/>
 
-### 🗄️ Databases
+## 🚚 `/nSTMS` — Transport Management *(DevOps & Cloud)*
+
+```text
+ DEV ──▶ Git / abapGit ──▶ GitHub Actions ──▶ Docker / Compose ──▶ AWS · SAP BTP
+```
+
+<a href="#"><img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,aws&theme=dark" /></a>
+![SAP BTP](https://img.shields.io/badge/SAP_BTP-0070F2?style=for-the-badge&logo=sap&logoColor=white)
+![abapGit](https://img.shields.io/badge/abapGit-1B2A4A?style=for-the-badge&logo=git&logoColor=white)
+
+**Methods & governance:** Agile Scrum · Kanban · CI/CD · ITIL v4 · COBIT · CMMI · Microservices · REST APIs · Modular ERP design
 
 <br/>
 
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+## 🟢 `/nSM50` — Work Processes *(Currently running)*
+
+| WP | Status | Task |
+|:-:|:-:|:--|
+| `DIA 0` | 🟢 Running | Sharpening **Classic ABAP** on S/4HANA (interfaces, ALV, IDoc monitoring) |
+| `DIA 1` | 🟢 Running | Evolving **Vendor Spend Intelligence** on SAP BTP |
+| `BGD 0` | 🟡 Waiting | Looking for an **end-of-studies internship (PFE) 2027** — SAP · Odoo · AI |
 
 <br/>
 
-### 🛠️ DevOps & Tools
-
-<br/>
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Odoo](https://img.shields.io/badge/Odoo%2017-714B67?style=for-the-badge&logo=odoo&logoColor=white)
-
-<br/>
-
-### ☁️ Cloud & Architecture
-
-<br/>
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Microservices](https://img.shields.io/badge/Microservices-0078D4?style=for-the-badge&logo=azurefunctions&logoColor=white)
-![Agile/Scrum](https://img.shields.io/badge/Agile%20%2F%20Scrum-6DB33F?style=for-the-badge&logo=jira&logoColor=white)
-
-<br/>
-
----
-
-<br/>
-
-## 💼 Experience Highlights
-
-<br/>
-
-> A few selected highlights — more coming to this profile regularly.
-
-<br/>
-
-### 🔍 Real-Time Face Recognition System — AI Engineer Intern
-
-Built an end-to-end employee attendance system using **computer vision**, featuring real-time face detection & recognition, an intuitive web dashboard for tracking and management.
-
-<br/>
-
-`Python` &nbsp;·&nbsp; `OpenCV` &nbsp;·&nbsp; `Streamlit` &nbsp;·&nbsp; `Computer Vision`
-
-<br/>
-
----
-
-<br/>
-
-### 🚗 Car Rental Web Platform — Full-Stack Intern
-
-Designed and developed a full web app handling reservations, user management, vehicle catalogue, CRUD operations and authentication flows.
-
-<br/>
-
-`Laravel` &nbsp;·&nbsp; `PHP` &nbsp;·&nbsp; `MySQL` &nbsp;·&nbsp; `HTML/CSS/JS`
-
-<br/>
-
----
-
-<br/>
-
-## 🚀 Featured Projects
-
-<br/>
-
-> A selection of what I've built — check repositories for the full picture.
-
-<br/>
-
-### 🛒 MAROCARTISAN — Moroccan Artisan Marketplace *(Global Project Lead)*
-
-Led the full technical coordination of **10 teams (55 students)** to build a marketplace platform for Moroccan handicrafts. Designed and optimized the Oracle database architecture, managed versioning, code reviews, and CI workflows across all teams.
-
-<br/>
-
-`Oracle DB` &nbsp;·&nbsp; `PL/SQL` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `GitHub` &nbsp;·&nbsp; `UML` &nbsp;·&nbsp; `Trello` &nbsp;·&nbsp; `Slack` &nbsp;·&nbsp; `Agile`
-
-<br/>
-
----
-
-<br/>
-
-### 🏢 Academic ERP — Odoo 17 Platform
-
-Architected a fully modular academic ERP system covering student management, grades, attendance tracking, internship management, and analytics dashboards. Built with a clean REST API layer and PostgreSQL backend.
-
-<br/>
-
-`Odoo 17` &nbsp;·&nbsp; `Python` &nbsp;·&nbsp; `PostgreSQL` &nbsp;·&nbsp; `Django` &nbsp;·&nbsp; `REST API` &nbsp;·&nbsp; `Docker`
-
-<br/>
-
-→ **[View Repository](https://github.com/Zouguari/ENSIASD-ERP---Syst-me-de-Gestion-Int-gr-)**
-
-<br/>
-
----
-
-<br/>
-
-## 📊 GitHub Stats
-
-<br/>
+## 📈 `/nST03N` — Workload Analysis
 
 <div align="center">
 
-<img height="220" src="https://github-readme-stats.vercel.app/api?username=Zouguari&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;count_private=true&amp;include_all_commits=true&amp;card_width=480" />
-&nbsp;&nbsp;
-<img height="220" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zouguari&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=320" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Zouguari&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
+&nbsp;
+<img height="170" src="https://streak-stats.demolab.com?user=Zouguari&theme=tokyonight&hide_border=true" />
 
 </div>
 
 <br/>
 
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Zouguari&amp;theme=tokyo-night&amp;hide_border=true&amp;area=true" width="100%"/>
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-## 🏗️ Methodologies & Governance
-
-<br/>
-
-| Area | Skills |
-|------|--------|
-| **Project Management** | Agile Scrum &nbsp;·&nbsp; Kanban &nbsp;·&nbsp; CI/CD workflows |
-| **IT Governance** | ITIL v4 &nbsp;·&nbsp; COBIT &nbsp;·&nbsp; CMMI |
-| **Architecture** | Microservices &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; Modular ERP design |
-| **Collaboration** | GitHub &nbsp;·&nbsp; Trello &nbsp;·&nbsp; Slack &nbsp;·&nbsp; Code reviews &nbsp;·&nbsp; Team leadership |
-
-<br/>
-
----
-
-<br/>
-
-## 🤝 Soft Skills
-
-<br/>
-
-`Leadership` &nbsp;&nbsp;·&nbsp;&nbsp; `Team Coordination` &nbsp;&nbsp;·&nbsp;&nbsp; `Problem Solving` &nbsp;&nbsp;·&nbsp;&nbsp; `Adaptability` &nbsp;&nbsp;·&nbsp;&nbsp; `Autonomy` &nbsp;&nbsp;·&nbsp;&nbsp; `Communication`
-
-<br/>
-
----
-
-<br/>
+## 📬 `/nSBWP` — Business Workplace *(Contact)*
 
 <div align="center">
 
-### 📬 Open to opportunities — let's build something great.
+**Working on SAP, Odoo or AI-for-ERP? Let's talk.**
 
-<br/>
-
-[![Email](https://img.shields.io/badge/Yassine.zouguari.123%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Yassine.zouguari.123@gmail.com)&nbsp;&nbsp;
+[![Email](https://img.shields.io/badge/Yassine.zouguari.123%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Yassine.zouguari.123@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/yassine--zouguari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yassine-zouguari)
 
-<br/>
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:48C9B0,100:6C63FF&amp;height=140&amp;section=footer" width="100%"/>
+```text
+✔ Profile ZYASSINE saved successfully   │   Status: Open to PFE 2027   │   SAP · Odoo · AI · Full-Stack
+```
 
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:714B67,50:1B2A4A,100:0070F2&height=130&section=footer" width="100%"/>
 </div>
